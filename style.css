@@ -1,0 +1,445 @@
+/* Styles pour l'en-tête */
+header {
+  padding: 10px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-content img {
+  width: 200px; 
+  height: 39px; 
+  margin-right: 40px; 
+}
+
+.main-menu {
+  list-style: none;
+  display: flex;
+}
+
+.main-menu li {
+  margin-left: 15px;
+  margin-right: 25px;
+}
+
+.departments .sub-menu {
+  display: none;
+  list-style: none;
+  position: absolute;
+  background-color: #f5f5f5;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #ababab;
+}
+
+.departments:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu li {
+  display: block;
+  height: 22px;
+  width: 220px;
+  padding: 10px;
+  background-color: #FFFFFF;
+  color: #ababab;
+}
+
+/* Styles pour les autres sections */
+section.centered-photo {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  flex-direction: column;
+}
+
+section.centered-photo img {
+  width: 40px;
+  height: 39px;
+  margin-left: 680px;
+}
+
+.centered-photo h1 {
+  text-align: center;
+  font-size: 34px;
+  margin: 40px 0;
+  color: #00B39B;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 44.2px;
+  letter-spacing: -0.3px;
+  text-decoration: none solid rgb(0, 179, 155);
+  font-weight: 300;
+}
+
+section .paragraph-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 10px auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section p {
+  flex: 1;
+  line-height: 1.5;
+}
+
+/* Styles pour les articles */
+section .article-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+section .article-rectangle {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 187px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+section .article-rectangle img {
+  height: 24px;
+  width: 24px;
+  font-size: 16px;
+  max-width: 100%;
+}
+
+.article-rectangle h4 {
+  margin: 40px 0;
+}
+
+section h2 {
+  font-size: 26px;
+  margin: 10px 0;
+  color: #FFFFFF;
+}
+
+section h4 {
+  font-size: 20px;
+  line-height: px;
+  margin: 10px 0;
+  color: #FFFFFF;
+}
+
+section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+section li {
+  margin: 5px 0;
+}
+
+section a {
+  text-decoration: none;
+}
+
+/* Styles pour le troisième article */
+section .choose-country .country-list {
+  display: none;
+  position: absolute;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+section .choose-country:hover .country-list {
+  display: block;
+}
+
+/* Styles pour le quatrième article */
+section .doctor-info {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+section .doctor-info h2,
+section .doctor-info h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+section .doctor-info h4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* Styles pour l'article "for clinics" */
+section .clinic-info {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+section .clinic-info h2,
+section .clinic-info h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+section .clinic-info h4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+h3 {
+  font-size: 26px;
+  margin: 25px 0;
+  color: #00B39B;
+  white-space: pre-line;
+  line-height: 32.5px;
+}
+
+section article .article-content {
+  text-align: center;
+  margin: 20px auto;
+} 
+
+section article .article-content h3 {
+  margin-top: 20px;
+}
+
+section article .article-content .images-container {
+  text-align: center;
+  margin: 20px auto;
+}
+
+section article .article-content .image-row {
+  display: flex;
+  margin-left: 750px;
+  margin-bottom: 40px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+section article .article-content img {
+  max-height: 60px;
+  max-width: 100px;
+  margin: 5px;
+}
+
+/* Styles for the platform-stats-section section */
+section.platform-stats-section {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  background-color: #D0FAF4;
+  box-sizing: border-box;
+ 
+  
+  padding-top: 20px; /* Add the desired top padding here */
+   /* Add the desired bottom padding here */
+  display: flex;
+  /* flex-wrap: wrap; Ensure that platform-square-containers wrap if necessary */
+  justify-content: center; /* Center the content horizontally */
+  width: 100%;
+}
+.leader{
+  display: flex;
+  flex-direction: column;
+}
+.leader p{
+  padding-left: 170px;
+}
+
+/* Styles for the platform-stats-heading */
+.platform-stats-heading {
+  font-size: 26px; /* Adjust the font size for the heading */
+  
+  color: #333333;
+  white-space: pre-line;
+  line-height: 32.5px;
+  
+  
+}
+
+/* Styles for the platform squares */
+.platform-square-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the platform squares horizontally */
+  gap: 40px; /* Add the desired horizontal gap between the platform squares */
+  margin-top: 30px;
+  flex-wrap: wrap;
+  /* padding-left: 400px; */
+
+  
+}
+
+.platform-square {
+  text-align: center;
+  width: 228px;
+  border: 1px solid #ccc;
+  padding: 60px;
+  /* max-width: 350px;  */
+  /* box-sizing: border-box; */
+
+  border-radius: 10px; 
+  height: 250px;
+  background-color: #FFFFFF;
+}
+
+.platform-square img {
+  max-height: 100px;
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+/* Styles for the text inside platform squares */
+.platform-square h5 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #333333;
+}
+
+.platform-square p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #333333;
+}
+/* Styles pour le h5 platform-stats-heading */
+h5.platform-stats-heading {
+  font-family: "Work Sans", Arial, sans-serif;
+  font-size: 34px;
+  font-weight: 300;
+  letter-spacing: -0.3px;
+  line-height: 44.2px;
+  color: #00BB9B;
+
+  box-sizing: border-box;
+
+  height: 88.4px;
+  width: 477.5px;
+  text-align: center;
+  padding-top: 10px; 
+}
+/* Styles pour les éléments platform-square */
+.platform-square {
+  /* ... (autres styles existants) ... */
+  flex: 1; /* Ajoutez cette ligne pour permettre aux éléments de prendre une part égale de l'espace disponible */
+  flex-basis: 50px; /* Ajoutez cette ligne pour définir la taille de base des carrés */
+  max-width: 100px; /* Ajoutez cette ligne pour limiter la largeur maximale des éléments à 100% */
+  margin: 50px; /* Ajoutez cette ligne pour définir une marge égale entre les carrés */
+
+}
+
+/* Styles pour le conteneur platform-square-container */
+.platform-square-container {
+  display: flex;
+  
+  
+  gap: 10px; /* Ajoutez cette ligne pour définir une distance entre les carrés */
+  
+}
+.nnnn{display: flex;
+flex-direction: column;}
+.nnnn h1 {
+  font-size: 30px;
+  /* margin: 40px 0 0 00px; */
+  /* Ajouter une marge de 40px en haut et en bas */
+  color: #00B39B;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 44.2px;
+  letter-spacing: -0.3px;
+  font-weight: 300;
+  text-align: center;
+}
+.nnnn p{
+ text-align: center;
+}
+/* Styles pour la section */
+
+
+/* Styles pour l'image */
+.image-container img {
+  width: 309,4px;
+  height:270px;
+  /* Définir la largeur souhaitée pour l'image */
+}
+
+/* Styles pour le conteneur du mot "Warsaw" et du bouton */
+.caption-and-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 20px 20px 20px 20px;
+ 
+  /* Aligner les éléments sur la même ligne et ajouter un espace de 10px en haut */
+}
+
+.caption-and-button p {
+  margin: 0 0px; /* Réduire la marge entre le mot et le bouton à 3px */
+}
+
+/* Styles pour le bouton "See Openings" */
+.see-openings-button {
+  padding: 10px 20px;
+  background-color: #3D83DF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+   cursor: pointer;
+  font-size: 10px;
+  line-height: 10px;
+  vertical-align: middle;
+  /* Styles pour le bouton */
+}
+/* Styles pour la section */
+section {
+  display: flex;
+  /* width: 100%; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin:80px 100px 80px;
+ 
+}
+.the-final
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Styles pour le paragraphe p1 */
+p1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  /* Taille du texte en 24px, en gras et ajouter un espace de 10px en bas */
+}
+
+/* Styles pour le bouton "See All Current Openings" */
+.see-openings-button {
+  padding: 10px 20px;
+  background-color: #00B39B;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  /* Styles pour le bouton */
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
